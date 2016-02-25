@@ -1,6 +1,9 @@
 ## Webito
 
 Project made for ubuntu 13.10 or after, python 2.7
+Webito is a simple http-based server api providing user registration, authentication and a feature to make a user able to see its last successful connection timestamps.
+No interface design has been done yet so the web interface is really simple.
+It is based on Flask, using a mongodb database to persist user data.
 
 To install the dependency packages used in the project run :
 ```shell
