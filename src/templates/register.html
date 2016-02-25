@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+Login
+
+{% block body %}
+  <h2>Registration</h2>
+  
+{% if current_user.is_authenticated %}
+ 	 You are already logged in !
+  	 <form action="/logout">
+  		 <input type="submit" value="Logout">
+	</form>
+{% else %}
+{% from "_macroform.html" import render_field %}
+<form method=post action="/register">
+  {{ form.hidden_tag() }}
+  <dl>
+    {{ render_field(form.username) }}
+    {{ render_field(form.email) }}
+    {{ render_field(form.password) }}
+    {{ render_field(form.confirm) }}
+  </dl>
+  <p><input type=submit value=Register>
+</form>
+{% endif %}
+
+{% endblock %}

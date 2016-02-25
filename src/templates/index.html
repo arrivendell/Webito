@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block style %}
+{% endblock %}
+{% block body %}
+{% if current_user.is_authenticated %}
+ 	 <form action="/logout">
+  		 <input type="submit" value="Logout">
+	</form>
+  Hi {{ current_user.username }}!
+   	 <form action="/list_ts">
+  		 <input type="submit" value="Last Successful logins">
+	</form>
+
+{% else %}
+ 	<form action="/login">
+  		 <input type="submit" value="Login">
+	</form>
+ 	 <form action="/register">
+  		 <input type="submit" value="Register">
+	</form>
+{% endif %}
+Welcome to the index of webito !
+{% endblock body %}
+{% block javascript %}
+{% endblock %}
