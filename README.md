@@ -34,7 +34,22 @@ You can run "make" in the project folder and you will see the virtual environmen
  To log in as an admin : admin/admin
  Nothing changes except a special page is displayed instead of the normal user connection list page, in case we want to support in the futur special admin features
  
- 
- 
- 
+ #Config settings :
+
+|  Instance  | Param name       | Description
+|------------|------------------|-----------------------------------------------------------------------------------|
+| Mongodb    | host             | ip adress of the host running the mongo database                                  |
+|            | name             | name of the mongodb database                                                      |
+|            | port             | port of the mongodb database                                                      |
+| Web server | is_https         | Set wether or not the website is run using the TLS layer.                         |
+|            | nbr_ts_returned  | Set the number of connection timestamps to display to a user when it requires it  |
+|            | path_cert_server | path to the certificate used in HTTPS mode                                        |
+|            | path_key_server  | path to the private key used in HTTPS mode                                        |
+|            | Max_size_list_ts | Number max of connection timestamps stored for a user                             |
+|            | host             | ip address of the host running the webserver                                      |
+|            | port             | port where the webserver will listen to connections                               |
+|            | logger_name      | name of the logger                                                                |
+|            |                  |                                                                                   |
+| General    | path             | path to the log file                                                              |
+|            | logger_level     | Level of logging (10:INFO, 20:DEBUG...)                                           |
 
