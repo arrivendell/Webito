@@ -34,7 +34,7 @@ You can run "make" in the project folder and you will see the virtual environmen
  To log in as an admin : admin/admin
  Nothing changes except a special page is displayed instead of the normal user connection list page, in case we want to support in the futur special admin features
  
- # Config settings :
+# Config settings :
 
 |  Instance  | Param name       | Description
 |------------|------------------|-----------------------------------------------------------------------------------|
